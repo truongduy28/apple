@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Festive', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: #424245;
+    padding: 13px 0px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li {
+    margin: 0px 20px;
+    font-size: 14px;
+}
+
+.header ul li a {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.content .welcome p {
+    background-color: #f2f2f2;
+    padding: 10px 20%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.content .welcome p a {
+    color: rgb(0, 140, 255);
+}
+
+
+/* .content .banner1 img,
+.content .banner2 img,
+.content .banner3 img {
+    width: 100%;
+} */
+
+.content .banner img {
+    width: 100%;
+}
+
+
+/* footer */
+
+.footer {
+    background: #f2f2f2;
+    padding: 20px 15%;
+    font-size: 13px;
+}
+
+.footer .apple-card p {
+    margin-bottom: 10px;
+}
+
+.footer .apple-map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .apple-map ul li {
+    margin-bottom: 10px;
+}
+
+.footer .apple-map ul li:first-child {
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.footer .apple-map ul li a {
+    color: #424245;
+}
+
+.footer .more {
+    margin: 30px 0px 10px;
+}
+
+.footer .more a {
+    color: rgb(0, 140, 255);
+}
+
+.footer .copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.footer .copy-right .privary ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .copy-right .privary ul li {
+    padding: 0px 10px;
+    border-left: 1px solid #424245;
+}
+
+.footer .copy-right .privary ul li:first-child {
+    border: none;
+}
+
+.footer .copy-right .privary ul li a {
+    color: #424245
+}

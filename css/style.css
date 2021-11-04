@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+.div1 {
+    background-image: url('https://inmythuathanoi.vn/wp-content/uploads/1504932439_in-banner.jpg');
+    height: 400px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    word-wrap: break-word;
+}
+
+body {
+    font-family: cursive;
+}
+
+.container {
+    display: flex;
+}
+
+.element {
+    height: 200px;
+}
+
+.element1 {
+    width: 40%;
+    background: yellow;
+}
+
+.element2 {
+    background: red;
+    width: 60%;
+}
+
+.menu {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0px 50px;
+}
