@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgb(255, 106, 106);
+    font-family: system-ui;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tablet,
+.mobile {
+    display: none;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.header ul li {
+    list-style: none;
+    padding: 15px 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.header ul li:hover {
+    background-color: yellow;
+}
+
+.header ul .menu {
+    position: relative;
+}
+
+.header ul .menu:hover .sub-menu {
+    display: flex;
+}
+
+.header ul li .sub-menu {
+    transition: all 0.2s;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+}
+
+.products .product {
+    width: 30%;
+    background: #fff;
+    margin: 30px 10px;
+    text-align: center;
+    line-height: 2em;
+    transition: all 0.3s;
+}
+
+.products .product:hover {
+    box-shadow: 0px 3px 16px rgb(77, 77, 77);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.products .product:hover img {
+    transform: scale(1.1);
+}
+
+.products .product .img img {
+    width: 100%;
+    transition: all 0.31s;
+}
+
+.products .product h4 {
+    font-size: 23px;
+}
+
+
+/* screen = x
+768 < x < 1024
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        background: yellow;
+    }
+    .pc {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        background: green;
+    }
+    .tablet,
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .products {
+        padding: 0px;
+    }
+    .products .product {
+        width: 46%;
+        background: #fff;
+        margin: 20px 5px;
+        text-align: center;
+        line-height: 2em;
+    }
+}
+
+
+/* width mobile: max width 767px
+    width tablet: min-width 768px and max 1024
+    width pc: min width 1025px hoặc mặc định k cần set
+*/
